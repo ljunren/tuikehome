@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+/*从上往下淡入，距离80px*/
+
+@keyframes fadeInDown80 {
+	from {
+		transform: translateY(-80px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.fadeInDown80 {
+	animation-name: fadeInDown80;
+	animation-duration: 1s;
+}
+@keyframes fadeInDown40 {
+	from {
+		transform: translateY(-40px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.fadeInDown40 {
+	animation-name: fadeInDown40;
+	animation-duration: 1s;
+}
+
+/*从下往上淡入，距离80px*/
+
+@keyframes fadeInUp80 {
+	from {
+		transform: translateY(80px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.fadeInUp80 {
+	animation-name: fadeInUp80;
+	animation-duration: 1s;
+}
+
+
+/*360° 选择Z轴*/
+
+@keyframes myrotato {
+	from {
+		transform: rotateZ(0);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+
+/*果冻QQ弹*/
+@keyframes shake {
+	from,
+	to {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+	25% {
+		-webkit-transform: scale(0.9, 1.1);
+		transform: scale(0.9, 1.1);
+	}
+	50% {
+		-webkit-transform: scale(1.1, 0.9);
+		transform: scale(1.1, 0.9);
+	}
+	75% {
+		-webkit-transform: scale(0.95, 1.05);
+		transform: scale(0.95, 1.05);
+	}
+	from,
+	to {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+	25% {
+		-webkit-transform: scale(0.9, 1.1);
+		transform: scale(0.9, 1.1);
+	}
+	50% {
+		-webkit-transform: scale(1.1, 0.9);
+		transform: scale(1.1, 0.9);
+	}
+	75% {
+		-webkit-transform: scale(0.95, 1.05);
+		transform: scale(0.95, 1.05);
+	}
+}
+
+@-webkit-keyframes shake {
+	from,
+	to {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+	25% {
+		-webkit-transform: scale(0.9, 1.1);
+		transform: scale(0.9, 1.1);
+	}
+	50% {
+		-webkit-transform: scale(1.1, 0.9);
+		transform: scale(1.1, 0.9);
+	}
+	75% {
+		-webkit-transform: scale(0.95, 1.05);
+		transform: scale(0.95, 1.05);
+	}
+	from,
+	to {
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+	25% {
+		-webkit-transform: scale(0.9, 1.1);
+		transform: scale(0.9, 1.1);
+	}
+	50% {
+		-webkit-transform: scale(1.1, 0.9);
+		transform: scale(1.1, 0.9);
+	}
+	75% {
+		-webkit-transform: scale(0.95, 1.05);
+		transform: scale(0.95, 1.05);
+	}
+}
+/*变大*/
+
+.toBig {
+	transform-origin: bottom center;
+	animation: toBig 1.3s;
+	animation-fill-mode: backwards, forwards;
+}
+@keyframes toBig {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+/*闪*/
+@keyframes toShine {
+	from {
+		transform: scale(0.8);
+	}
+	to {
+		transform: scale(1.5);
+	}
+}
+.width {
+	transform-origin: left;
+	animation: width 1.3s;
+	animation-fill-mode: backwards, forwards;
+}
+@keyframes width{
+	from{
+		width: 0;
+	}
+	to{
+		width: 100%;
+	}
+}
+.height {
+	transform-origin: left;
+	animation: height 1.3s;
+	animation-fill-mode: backwards, forwards;
+}
+@keyframes height{
+	from{
+		height: 0;
+	}
+	to{
+		height: calc(100% - 40px);
+	}
+}
+
+.height2 {
+	transform-origin: left;
+	animation: height2 1.3s;
+	animation-fill-mode: backwards, forwards;
+}
+@keyframes height2{
+	from{
+		height: 0;
+	}
+	to{
+		height: calc(100% - 20px);
+	}
+}
